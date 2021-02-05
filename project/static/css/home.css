@@ -1,0 +1,79 @@
+body {
+    background-color: #292929;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+    font-family: Hack, monospace;
+    color: white;
+}
+  
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: white; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+img {
+    display: block;
+    margin-left: 0;
+    border-radius: 8px;
+}
+.cropped{
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .cropped {
+        width: 200px; /* width of container */
+        height: 200px; /* height of container */
+        object-fit: cover;
+    }
+}
+
+p {
+    color: white;
+    font-family: Hack, monospace;
+}
+h1 {
+    color: white;
+    font-family: Hack, monospace;
+}
+
+a.txt:link,
+a.txt:visited {
+    border-bottom: 1px dashed;
+    color: palevioletred;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+a.txt:hover,
+a.txt:focus {
+    border-bottom-style: solid;
+    color: khaki;
+    outline: 1px solid;
+    outline-offset: .125em;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 55px;
+    text-align: center;
+    border-radius: 30%;
+    background: #292929;
+    color: white;
+}
+.fa:link,
+.fa:visited{
+color: white;
+}
+.fa:hover {
+opacity:40%;
+}

@@ -1,0 +1,99 @@
+{
+    "projects": [
+      {
+        "name": "get-dem",
+        "link": "get-dem",
+        "date": "May 2018",
+        "short": "Get some dems.",
+        "status": "complete",
+        "weight": 1,
+        "tags": [
+          "python",
+          "usgs"
+        ],
+        "photos": [
+          "/static/projects/get-dem/img.png"
+        ]
+      },
+      {
+        "name": "lidar-nn",
+        "link": "lidar-nn",
+        "date": "May 2018",
+        "short": "Won't you be, my neighbor?",
+        "status": "complete",
+        "weight": 1,
+        "tags": [
+          "scipy",
+          "js"
+        ],
+        "photos": [
+          "/static/projects/lidar-nn/img.png"
+        ]
+      },
+      {
+        "name": "when-rad",
+        "link": "when-rad",
+        "date": "May 2018",
+        "short": "Light or dark.",
+        "status": "complete",
+        "weight": 1,
+        "tags": [
+          "numba",
+          "cli"
+        ],
+        "photos": [
+          "/static/projects/when-rad/img.png"
+        ]
+      },
+      {
+        "name": "nginx-wrapper",
+        "link": "nginx-wrapper",
+        "date": "May 2018",
+        "short": "Proxy or bust.",
+        "status": "complete",
+        "weight": 1,
+        "tags": [
+          "devops",
+          "security",
+          "docker",
+          "git"
+        ],
+        "photos": [
+          "/static/projects/nginx-wrapper/img.png"
+        ]
+      },
+      {
+        "name": "ufunc-correct",
+        "link": "ufunc-correct",
+        "date": "May 2018",
+        "short": "Proxy or bust.",
+        "status": "complete",
+        "weight": 1,
+        "tags": [
+          "numpy",
+          "linalg",
+          "cli"
+        ],
+        "photos": [
+          "/static/projects/ufunc-correct/img.png"
+        ]
+      },
+      {
+        "name": "cstern.io",
+        "link": "cstern.io",
+        "date": "May 2018",
+        "short": "Proxy or bust.",
+        "status": "complete",
+        "weight": 1,
+        "tags": [
+          "flask",
+          "css",
+          "json"
+        ],
+        "photos": [
+          "/static/projects/cstern.io/img.png"
+        ]
+      }
+
+    ]
+  }

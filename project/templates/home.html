@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Charles Stern | Python + Geoscience</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- layout -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- typeface -->
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+    <!-- custom -->
+    <link rel= "stylesheet" href= "{{ url_for('static',filename='css/home.css') }}">
+</head>
+
+<body>
+<div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l1"></div>
+    <div class="w3-col w3-container s12 m3 l3">
+        <img class="cropped" src="{{ url_for('static',filename='headshot.jpeg') }}" alt="headshot">
+    </div>
+    <div class="w3-col w3-container s12 m7 l7">
+        <h1>Charles Stern</h1>
+        <p>
+            I'm a scientific Pythonista with an special interest in geospatial analysis and
+            visualization.
+            <a class="txt" href="/projects">Projects</a> is a catalog of
+            recent solutions, and also the questions they raised:
+        </p>
+        <ul>
+            <li><a class="txt" href="/projects/get-dem">
+            get-dem</a>, a dem-getter
+            </li>
+            <li><a class="txt" href="http://cstern.io/code-cairns/">
+            griddar</a>, a lidar gridder</li>
+            <li> How <a class="txt" href="http://cstern.io/code-cairns/">when-rad</a>
+            <code> sys.argv </code>
+            </li>
+        </ul>
+        <p>
+            Software engineering is a fresh professional focus for me and I'm currently seeking my first role in the field.
+            <a class="txt" href="mailto:charlesisaacstern@gmail.com" target="_blank">Reach out</i></a>
+        </p>
+        
+        <a href="https://twitter.com/charlesstern" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://github.com/cisaacstern" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/charles-stern-ab965b29/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+        <a href="mailto:charlesisaacstern@gmail.com" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+    
+    </div>
+    <div class="w3-col w3-container s0 m1 l1"></div>
+</div>
+
+</body>
+</html>
