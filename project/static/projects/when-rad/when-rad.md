@@ -1,21 +1,49 @@
-## motivation
+# Motivation
 
-how it started
+It all started with the formula $e^x$.
 
-## what works
+# What Works
 
-how its going
+How its going. Here's some `inline code` that's pretty cool.
 
-> **highlight**
+> **Highlight**
 
->    code snippet
+> Here's some more inline `code` that worked well. But 
+> what I really want to tell you about is this multiline snippet.
+>   
+>```{.python .codehilite}
+ import foo.bar
+ ```
 
-## room to grow
+Here's some more text.
 
-> **big picture**
+# Room To Grow
 
-> the big theme
+Here's an example of multiline code which could be improved:
 
-## further reading
+```{.python .codehilite}
+from engine import RunForrestRun
 
-You might also be intersted in (link)[github.com], which explores x, y, and z. Or maybe (link)[github.com] which looks at it another way.
+"""Test code for syntax highlighting!"""
+
+class Foo:
+	def __init__(self, var):
+		self.var = var
+		self.run()
+
+	def run(self):
+		RunForrestRun()  # run along!
+```
+
+I'm aware there's a better way but haven't done it yet.
+
+> **Big Picture**
+
+> big theme
+
+
+# Further Reading
+
+You might also be intersted in 
+<a href="https://github.com" target="_blank">linked content</a>, 
+which explores x, y, and z.

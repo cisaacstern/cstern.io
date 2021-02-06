@@ -2,9 +2,8 @@ import os
 import json
 import io
 
-import markdown
 from flask import Flask, render_template, request
-
+import markdown
 
 app = Flask(__name__)
 
@@ -43,9 +42,14 @@ def project(title):
     # load html if the json file doesn't contain a description
     if 'description' not in selected:
         path = "projects"
+
         md = io.open(get_static_file(
             'static/%s/%s/%s.md' % (path, selected['link'], selected['link'])), "r", encoding="utf-8").read()
-        selected['description'] = markdown.markdown(md)
+
+        selected['description'] = markdown.markdown(md, 
+                                    extensions=['codehilite', 'pymdownx.superfences', 
+                                                'pymdownx.arithmatex']
+                                )
 
     name = selected['name']
     last_commit = data['badge']['base'] + name + data['badge']['lg_tail']

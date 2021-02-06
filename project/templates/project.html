@@ -3,9 +3,15 @@
 {% block head %}
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/project.css') }}">
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/chip.css') }}">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/hilite.css') }}">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
 {% endblock %}
 
 {% block body %}
@@ -16,35 +22,63 @@
             {% for photo in project['photos'] %}
             <img class="cropped round-corners" src="{{ photo }}" alt="project_photo">
             {% endfor %}
+
+            <div class="heading">
+                <div class="title">{{ project['name'] }}</div>
+                <a href="https://github.com/cisaacstern/{{ project['name'] }}" target="_blank">
+                    <img class="round-corners" alt="GitHub" src="{{ last_commit }}">
+                </a>
+                <div class="md-chips">
+                    {% for tag in project['tags'] %}
+                    <div class="md-chip md-chip-clickable"><a class="md-chip-link" href="/projects?tags={{tag}}">{{tag}}</a>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <div class="links">
+                    {% if 'github' in project %}
+                    <div><a class="github" href={{project['github']}}>Find on Github</a></div>
+                    {% elif 'arxiv' in project %}
+                    <div><a class="github" href={{project['arxiv']}}>View on Arxiv</a></div>
+                    {% elif 'playstore' in project %}
+                    <div><a class="github" href={{project['playstore']}}>View on Google Play</a></div>
+                    {% endif %}
+                </div>
+            </div>
+
         </div>
         {% endif %}
     </div>
 
     <div class="wrapper scroll-wrapper">
-        <div class="heading">
-            <div class="title">{{ project['name'] }}</div>
-            <a href="https://github.com/cisaacstern/{{ project['name'] }}" target="_blank">
-                <img class="round-corners" alt="GitHub" src="{{ last_commit }}">
-            </a>
-            <div class="md-chips">
-                {% for tag in project['tags'] %}
-                <div class="md-chip md-chip-clickable"><a class="md-chip-link" href="/projects?tags={{tag}}">{{tag}}</a>
-                </div>
-                {% endfor %}
-            </div>
-            
-            <div class="links">
-                {% if 'github' in project %}
-                <div><a class="github" href={{project['github']}}>Find on Github</a></div>
-                {% elif 'arxiv' in project %}
-                <div><a class="github" href={{project['arxiv']}}>View on Arxiv</a></div>
-                {% elif 'playstore' in project %}
-                <div><a class="github" href={{project['playstore']}}>View on Google Play</a></div>
-                {% endif %}
-            </div>
-        </div>
         <div class="content">{{ project['description'] | safe }}</div>
     </div>
 
 </div>
+
+<script type="text/javascript">
+    window.MathJax = {
+        options: {
+          ignoreHtmlClass: 'tex2jax_ignore',
+          processHtmlClass: 'tex2jax_process',
+          renderActions: {
+            find: [10, function (doc) {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                const sibling = node.previousElementSibling;
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+                if (sibling && sibling.matches('.MathJax_Preview')) {
+                  sibling.parentNode.removeChild(sibling);
+                }
+              }
+            }, '']
+          }
+        }
+      };
+    </script>
 {% endblock %}

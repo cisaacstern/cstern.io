@@ -1,8 +1,8 @@
-## motivation
+# Motivation
 
 how it started
 
-## what works
+## What Works
 
 how its going
 
@@ -10,12 +10,12 @@ how its going
 
 >    code snippet
 
-## room to grow
+## Room To Grow
 
 > **big picture**
 
 > the big theme
 
-## further reading
+## Further Reading
 
 You might also be intersted in (link)[github.com], which explores x, y, and z. Or maybe (link)[github.com] which looks at it another way.
