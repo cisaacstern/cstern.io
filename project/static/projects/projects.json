@@ -1,10 +1,14 @@
 {
+    "badge": {
+      "base": "https://img.shields.io/github/last-commit/cisaacstern/",
+      "sm_tail": "?logo=github&amp&style=flat-square&color=darkslategrey&labelColor=e0e0e0&logoColor=darkslategrey",
+      "lg_tail": "?logo=github&amp&style=for-the-badge&color=darkslategrey&labelColor=e0e0e0&logoColor=darkslategrey"
+    },
     "projects": [
       {
         "name": "get-dem",
         "link": "get-dem",
-        "date": "May 2018",
-        "short": "Get some dems.",
+        "short": "Select a point on the US map, and this module retrieves USGS 1 arc-second DEMs. Then interactivately subset them.",
         "status": "complete",
         "weight": 1,
         "tags": [
@@ -18,7 +22,6 @@
       {
         "name": "lidar-nn",
         "link": "lidar-nn",
-        "date": "May 2018",
         "short": "Won't you be, my neighbor?",
         "status": "complete",
         "weight": 1,
@@ -33,7 +36,6 @@
       {
         "name": "when-rad",
         "link": "when-rad",
-        "date": "May 2018",
         "short": "Light or dark.",
         "status": "complete",
         "weight": 1,
@@ -48,7 +50,6 @@
       {
         "name": "nginx-wrapper",
         "link": "nginx-wrapper",
-        "date": "May 2018",
         "short": "Proxy or bust.",
         "status": "complete",
         "weight": 1,
@@ -65,7 +66,6 @@
       {
         "name": "ufunc-correct",
         "link": "ufunc-correct",
-        "date": "May 2018",
         "short": "Proxy or bust.",
         "status": "complete",
         "weight": 1,
@@ -81,7 +81,6 @@
       {
         "name": "cstern.io",
         "link": "cstern.io",
-        "date": "May 2018",
         "short": "Proxy or bust.",
         "status": "complete",
         "weight": 1,

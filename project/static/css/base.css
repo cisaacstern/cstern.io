@@ -65,3 +65,7 @@ a.txt:focus {
     outline: 1px solid;
     outline-offset: .125em;
 }
+
+.round-corners {
+  border-radius: 5px;
+}

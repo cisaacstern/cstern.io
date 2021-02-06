@@ -39,7 +39,12 @@
         <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">{{project['name']}}<i
                     class="material-icons right">close</i></span>
-            <div><span class="status">{{project['date']}}</span></div>
+            <div>
+                <a href="https://github.com/cisaacstern/{{project['name']}}" target="_blank">
+                    <img class="round-corners" alt="GitHub" 
+                            src="{{badgebase}}{{project['name']}}{{badgetail}}">
+                </a>
+            </div>
             <p>{{project['short']}}</p>
             <span><a href="/projects/{{project['link']}}">Read More</a></span>
         </div>
