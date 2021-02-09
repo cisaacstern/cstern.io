@@ -2,8 +2,9 @@ import os
 import json
 import io
 
-from flask import Flask, render_template, request
 import markdown
+from flask import Flask, render_template, request
+from jinja2 import Environment
 
 app = Flask(__name__)
 
@@ -39,16 +40,38 @@ def project(title):
     else:
         selected = in_project
         
-    # load html if the json file doesn't contain a description
     if 'description' not in selected:
-        path = "projects"
+        cwd = "static/projects"
+        projdir = (cwd, selected['link'])
 
-        md = io.open(get_static_file(
-            'static/%s/%s/%s.md' % (path, selected['link'], selected['link'])), "r", encoding="utf-8").read()
+        md_template = open_static('%s/template.md' % cwd)
+
+        context = {
+            'motive_lede' : open_static('%s/%s/motive_lede.md' % projdir),
+            'bigtheme' : open_static('%s/%s/bigtheme.md' % projdir),
+            'motive_full' : open_static('%s/%s/motive_full.md' % projdir),
+            'ww_lede' : open_static('%s/%s/ww_lede.md' % projdir),
+            'ww_code' : open_static('%s/%s/ww_code.py' % projdir),
+            'ww_full' : open_static('%s/%s/ww_full.md' % projdir),
+            'rtg_lede' : open_static('%s/%s/rtg_lede.md' % projdir),
+            'rtg_code' : open_static('%s/%s/rtg_code.py' % projdir),
+            'rtg_full' : open_static('%s/%s/rtg_full.md' % projdir),
+            'xtra_read' : open_static('%s/%s/xtra_read.md' % projdir),
+        }
+        
+        md = render_markdown_template(md_template, context)
 
         selected['description'] = markdown.markdown(md, 
-                                    extensions=['codehilite', 'pymdownx.superfences', 
-                                                'pymdownx.arithmatex']
+                                    extensions=[
+                                        'codehilite', 
+                                        'pymdownx.superfences', 
+                                        'pymdownx.arithmatex'
+                                        ],
+                                    extension_configs = {
+                                        'pymdownx.arithmatex' : {
+                                            'generic' : 'True'
+                                        }
+                                    }
                                 )
 
     name = selected['name']
@@ -80,3 +103,11 @@ def order_projects_by_weight(projects):
     except KeyError:
         return 0
 
+def render_markdown_template(md_template, context):
+    env = Environment()
+    template = env.from_string(md_template)
+    rendered_md = template.render(context=context)
+    return rendered_md
+
+def open_static(path):
+    return io.open(get_static_file(path), "r", encoding="utf-8").read()

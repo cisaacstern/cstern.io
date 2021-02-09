@@ -4,6 +4,31 @@
   color: white !important;
 }
 
+.hosted{
+  margin-bottom: 10px;
+}
+
+.hosted .fa {
+  background: white;
+  opacity: 100;
+  width: 2em;
+}
+
+.hosted .fa,
+.hosted a {
+  color: darkslategrey;
+  vertical-align: middle !important;
+  background: #eee;
+  border-radius: 5px;
+  padding: 5px;
+  padding-right:10px;
+}
+.hosted a {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-weight: 700;
+
+}
+
 .icon {
   font-size: .9rem;
   display: inline-flex;

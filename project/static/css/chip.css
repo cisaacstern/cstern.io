@@ -38,6 +38,7 @@
 
 .md-chip-link{
   color: #555;
+  padding: 5px;
 }
 
 .md-chip-link:hover {

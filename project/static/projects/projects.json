@@ -17,7 +17,8 @@
         ],
         "photos": [
           "/static/projects/get-dem/img.png"
-        ]
+        ],
+        "hosted": "True"
       },
       {
         "name": "lidar-nn",
@@ -31,7 +32,8 @@
         ],
         "photos": [
           "/static/projects/lidar-nn/img.png"
-        ]
+        ],
+        "hosted": "True"
       },
       {
         "name": "when-rad",
@@ -45,7 +47,8 @@
         ],
         "photos": [
           "/static/projects/when-rad/img.png"
-        ]
+        ],
+        "hosted": "True"
       },
       {
         "name": "nginx-wrapper",
@@ -61,7 +64,8 @@
         ],
         "photos": [
           "/static/projects/nginx-wrapper/img.png"
-        ]
+        ],
+        "hosted": "False"
       },
       {
         "name": "ufunc-correct",
@@ -76,7 +80,8 @@
         ],
         "photos": [
           "/static/projects/ufunc-correct/img.png"
-        ]
+        ],
+        "hosted": "True"
       },
       {
         "name": "cstern.io",
@@ -91,7 +96,8 @@
         ],
         "photos": [
           "/static/projects/cstern.io/img.png"
-        ]
+        ],
+        "hosted": "False"
       }
 
     ]

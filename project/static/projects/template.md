@@ -1,21 +1,31 @@
 # Motivation
 
-how it started
+{{ context['motive_lede'] }}
 
-## What Works
+>  {{ context['bigtheme'] }}
 
-how its going
+{{ context['motive_full'] }}
 
-> **highlight**
+# What Works
 
->    code snippet
+{{ context['ww_lede'] }}
 
-## Room To Grow
+```{.python .codehilite}
+{{ context['ww_code'] }}
+```
 
-> **big picture**
+{{ context['ww_full'] }}
 
-> the big theme
+# Room To Grow
 
-## Further Reading
+{{ context['rtg_lede'] }}
 
-You might also be intersted in (link)[github.com], which explores x, y, and z. Or maybe (link)[github.com] which looks at it another way.
+```{.python .codehilite}
+{{ context['rtg_code'] }}
+```
+
+{{ context['rtg_full'] }}
+
+# Further Reading
+
+{{ context['xtra_read'] }}

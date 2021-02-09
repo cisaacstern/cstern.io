@@ -69,3 +69,21 @@ a.txt:focus {
 .round-corners {
   border-radius: 5px;
 }
+
+/* Style all font awesome icons */
+.fa {
+  padding: 0 5px 0 5px;
+  width: 45px;
+  text-align: center;
+  border-radius: 30%;
+  background: #292929;
+  color: white;
+  opacity: 60%;
+}
+.fa:link,
+.fa:visited{
+color: white;
+}
+.fa:hover {
+opacity:30%;
+}
