@@ -12,13 +12,13 @@
         "status": "complete",
         "weight": 1,
         "tags": [
+          "launch",
           "python",
           "usgs"
         ],
         "photos": [
           "/static/projects/get-dem/img.png"
-        ],
-        "hosted": "True"
+        ]
       },
       {
         "name": "lidar-nn",
@@ -27,13 +27,13 @@
         "status": "complete",
         "weight": 1,
         "tags": [
+          "launch",
           "scipy",
           "js"
         ],
         "photos": [
           "/static/projects/lidar-nn/img.png"
-        ],
-        "hosted": "True"
+        ]
       },
       {
         "name": "when-rad",
@@ -42,13 +42,13 @@
         "status": "complete",
         "weight": 1,
         "tags": [
+          "launch",
           "numba",
           "cli"
         ],
         "photos": [
           "/static/projects/when-rad/img.png"
-        ],
-        "hosted": "True"
+        ]
       },
       {
         "name": "nginx-wrapper",
@@ -64,8 +64,7 @@
         ],
         "photos": [
           "/static/projects/nginx-wrapper/img.png"
-        ],
-        "hosted": "False"
+        ]
       },
       {
         "name": "ufunc-correct",
@@ -74,14 +73,14 @@
         "status": "complete",
         "weight": 1,
         "tags": [
+          "launch",
           "numpy",
           "linalg",
           "cli"
         ],
         "photos": [
           "/static/projects/ufunc-correct/img.png"
-        ],
-        "hosted": "True"
+        ]
       },
       {
         "name": "cstern.io",
@@ -96,8 +95,7 @@
         ],
         "photos": [
           "/static/projects/cstern.io/img.png"
-        ],
-        "hosted": "False"
+        ]
       }
 
     ]

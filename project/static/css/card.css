@@ -16,9 +16,9 @@
 
 .hosted .fa,
 .hosted a {
-  color: darkslategrey;
+  color: rgb(127, 255, 212, 0.5);
   vertical-align: middle !important;
-  background: #eee;
+  text-shadow: #292929 1px 0 1px;
   border-radius: 5px;
   padding: 5px;
   padding-right:10px;
@@ -26,7 +26,6 @@
 .hosted a {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
   font-weight: 700;
-
 }
 
 .icon {

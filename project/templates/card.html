@@ -40,10 +40,10 @@
             <span class="card-title grey-text text-darken-4">{{project['name']}}<i
                     class="material-icons right">close</i></span>
 
-            {% if project['hosted'] == "True" %}
+            {% if "launch" in project['tags'] %}
             <div class="hosted">
                 <a href="https://apps.cstern.io/{{ project['name'] }}" target="_blank">
-                <i class="fa fa-window-restore fa-1x"></i>LAUNCH IN BROWSER</a>
+                <i class="fa fa-window-restore fa-sm"></i>LAUNCH IN BROWSER</a>
             </div>
             {% endif %}
             

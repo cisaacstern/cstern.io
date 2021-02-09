@@ -26,10 +26,13 @@
             <div class="heading">
                 <div class="title">{{ project['name'] }}</div>
                 
-                {% if project['hosted'] == "True" %}
+                {% if "launch" in project['tags'] %}
                 <div class="hosted">
                     <a href="https://apps.cstern.io/{{ project['name'] }}" target="_blank">
-                    <i class="fa fa-window-restore fa-2x"></i>LAUNCH IN BROWSER</a>
+                        <div>
+                            <i class="fa fa-window-restore fa-2x"></i>LAUNCH IN BROWSER</a>
+                        </div>
+                    </a>
                 </div>
                 {% endif %}
 

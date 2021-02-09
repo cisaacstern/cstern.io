@@ -77,3 +77,84 @@ color: white;
 .fa:hover {
 opacity:40%;
 }
+
+blockquote {
+    font-family: 'Hack', monospace;
+    color: white;
+    font-size: 90%;
+}
+
+.nav-a {
+    font-size: 110%;
+}
+
+span,
+span .fa,
+span .fa:hover {
+    color: rgb(127, 255, 212, 0.5);
+    vertical-align: middle;
+    opacity: 100%;
+}
+
+span {
+    white-space: nowrap;
+    text-align: left;
+}
+
+span .fa {
+    display: inline-block;
+    font-size: 1em;
+    width: 2em;
+    padding: 0 ;
+}
+
+.tooltip {
+    text-decoration:none;
+    position:relative;
+}
+   
+.tooltip .tt-content {
+    display:none;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    color:black;
+    background: #292929; 
+}
+
+.tooltip .tt-content img {
+    max-width: 300px;
+    margin: 0px;
+}
+
+.tooltip:hover .tt-content {
+    display:block;
+    position:absolute;
+    top:7px;
+    left:-100px;
+    z-index:1000;
+    width:auto;
+    max-width:320px;
+    min-height:128px;
+    /* border:1px solid black; */
+    filter: drop-shadow(0 0 0.75rem black);
+    margin: 0px;
+    overflow:hidden;
+    padding:8px;
+}
+
+/*
+.launch .fa,
+.launch i {
+  color: darkslategrey;
+  vertical-align: middle;
+  background: #292929;
+  border-radius: 5px;
+  padding: 5px;
+  padding-right:10px;
+}
+.launch i {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-weight: 700;
+}
+*/
