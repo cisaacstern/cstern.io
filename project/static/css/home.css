@@ -61,7 +61,8 @@ a.txt:focus {
 }
 
 /* Style all font awesome icons */
-.fa {
+.fa,
+.fab {
     padding: 10px;
     font-size: 30px;
     width: 55px;
@@ -71,17 +72,23 @@ a.txt:focus {
     color: white;
 }
 .fa:link,
-.fa:visited{
+.fab:link,
+.fa:visited, 
+.fab:visited {
 color: white;
 }
-.fa:hover {
+.fa:hover,
+.fab:hover {
 opacity:40%;
 }
 
 blockquote {
     font-family: 'Hack', monospace;
-    color: white;
+    color: rgb(127, 255, 212, 0.7);
     font-size: 90%;
+    border-left: solid rgb(127, 255, 212, 0.2);
+    padding: 10px;
+    background-color: rgb(127, 255, 212, 0.05);
 }
 
 .nav-a {

@@ -33,7 +33,7 @@ def project(title):
     data = get_static_json("static/projects/projects.json")
     projects = data['projects']
 
-    in_project = next((p for p in projects if p['link'] == title), None)
+    in_project = next((p for p in projects if p['name'] == title), None)
 
     if in_project is None:
         return render_template('404.html'), 404
@@ -42,7 +42,7 @@ def project(title):
         
     if 'description' not in selected:
         cwd = "static/projects"
-        projdir = (cwd, selected['link'])
+        projdir = (cwd, selected['name'])
 
         md_template = open_static('%s/template.md' % cwd)
 

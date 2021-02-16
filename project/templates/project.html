@@ -24,17 +24,19 @@
             {% endfor %}
 
             <div class="heading">
-                <div class="title">{{ project['name'] }}</div>
+                <div class="title">
+                {{ project['name'] }}
                 
-                {% if "launch" in project['tags'] %}
-                <div class="hosted">
-                    <a href="https://apps.cstern.io/{{ project['name'] }}" target="_blank">
-                        <div>
-                            <i class="fa fa-window-restore fa-2x"></i>LAUNCH IN BROWSER</a>
-                        </div>
-                    </a>
-                </div>
+                {% if "app" in project['tags'] %}
+                <a href="https://apps.cstern.io/{{ project['name'] }}" 
+                    target="_blank">
+                    <span class="change-icon">
+                    <i class="fas fa-external-link-square-alt"></i>
+                    <i class="fas fa-external-link-alt"></i>
+                    </span>
+                </a>
                 {% endif %}
+                </div>
 
                 <a href="https://github.com/cisaacstern/{{ project['name'] }}" target="_blank">
                     <img class="round-corners" alt="GitHub" src="{{ last_commit }}"></a>

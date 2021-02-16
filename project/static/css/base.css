@@ -71,7 +71,8 @@ a.txt:focus {
 }
 
 /* Style all font awesome icons */
-.fa {
+.fa,
+.fab {
   padding: 0 5px 0 5px;
   width: 45px;
   text-align: center;
@@ -81,9 +82,23 @@ a.txt:focus {
   opacity: 60%;
 }
 .fa:link,
-.fa:visited{
+.fab:link,
+.fa:visited,
+.fab:visited {
 color: white;
 }
-.fa:hover {
+.fa:hover,
+.fab:hover {
 opacity:30%;
+}
+.change-icon > .fas + .fas,
+.change-icon:hover > .fas {
+  display: none;
+}
+.change-icon:hover > .fas + .fas {
+  display: inherit;
+  opacity: 80%;
+}
+.fas {
+  color: rgb(127, 255, 212, 0.7);
 }

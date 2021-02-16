@@ -7,14 +7,11 @@
     "projects": [
       {
         "name": "get-dem",
-        "link": "get-dem",
         "short": "Select a point on the US map, and this module retrieves USGS 1 arc-second DEMs. Then interactivately subset them.",
         "status": "complete",
         "weight": 1,
         "tags": [
-          "launch",
-          "python",
-          "usgs"
+          "app"
         ],
         "photos": [
           "/static/projects/get-dem/img.png"
@@ -22,14 +19,11 @@
       },
       {
         "name": "lidar-nn",
-        "link": "lidar-nn",
         "short": "Won't you be, my neighbor?",
         "status": "complete",
         "weight": 1,
         "tags": [
-          "launch",
-          "scipy",
-          "js"
+          "app"
         ],
         "photos": [
           "/static/projects/lidar-nn/img.png"
@@ -37,14 +31,11 @@
       },
       {
         "name": "when-rad",
-        "link": "when-rad",
         "short": "Light or dark.",
         "status": "complete",
         "weight": 1,
         "tags": [
-          "launch",
-          "numba",
-          "cli"
+          "app"
         ],
         "photos": [
           "/static/projects/when-rad/img.png"
@@ -52,15 +43,11 @@
       },
       {
         "name": "nginx-wrapper",
-        "link": "nginx-wrapper",
         "short": "Proxy or bust.",
         "status": "complete",
         "weight": 1,
         "tags": [
-          "devops",
-          "security",
-          "docker",
-          "git"
+          "template"
         ],
         "photos": [
           "/static/projects/nginx-wrapper/img.png"
@@ -68,15 +55,11 @@
       },
       {
         "name": "ufunc-correct",
-        "link": "ufunc-correct",
         "short": "Proxy or bust.",
         "status": "complete",
         "weight": 1,
         "tags": [
-          "launch",
-          "numpy",
-          "linalg",
-          "cli"
+          "app"
         ],
         "photos": [
           "/static/projects/ufunc-correct/img.png"
@@ -84,19 +67,51 @@
       },
       {
         "name": "cstern.io",
-        "link": "cstern.io",
         "short": "Proxy or bust.",
         "status": "complete",
         "weight": 1,
         "tags": [
-          "flask",
-          "css",
-          "json"
+          "static"
         ],
         "photos": [
           "/static/projects/cstern.io/img.png"
         ]
+      },
+      {
+        "name": "albedo",
+        "short": "Proxy or bust.",
+        "status": "complete",
+        "weight": 1,
+        "tags": [
+          "analysis"
+        ],
+        "photos": [
+          "/static/projects/albedo/img.png"
+        ]
+      },
+      {
+        "name": "cv2pdf",
+        "short": "Proxy or bust.",
+        "status": "complete",
+        "weight": 1,
+        "tags": [
+          "script"
+        ],
+        "photos": [
+          "/static/projects/cv2pdf/img.png"
+        ]
+      },
+      {
+        "name": "panel-tmpl",
+        "short": "Proxy or bust.",
+        "status": "complete",
+        "weight": 1,
+        "tags": [
+          "templates"
+        ],
+        "photos": [
+          "/static/projects/cv2pdf/img.png"
+        ]
       }
-
     ]
   }

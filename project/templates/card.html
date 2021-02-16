@@ -19,12 +19,21 @@
             </div>
             <div>
             <span id="title" class="card-title activator grey-text text-darken-4" title="{{project['name']}}">
-              {{project['name']}}
+                {{project['name']}}
+                {% if "app" in project['tags'] %}
+                <a href="https://apps.cstern.io/{{ project['name'] }}" 
+                    target="_blank">
+                    <span class="change-icon">
+                    <i class="fas fa-external-link-square-alt"></i>
+                    <i class="fas fa-external-link-alt"></i>
+                    </span>
+                </a>
+                {% endif %}
             </span>
                 <i class="material-icons right activator">more_vert</i>
             </div>
             <div>
-                <span><a href="/projects/{{project['link']}}">Read More</a></span>
+                <span><a href="/projects/{{project['name']}}">Read More</a></span>
                 {% if 'github' in project %}
                 <span><a class="github" href={{project['github']}}> | Github</a></span>
                 {% endif %}
@@ -37,24 +46,28 @@
             </div>
         </div>
         <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">{{project['name']}}<i
-                    class="material-icons right">close</i></span>
-
-            {% if "launch" in project['tags'] %}
-            <div class="hosted">
-                <a href="https://apps.cstern.io/{{ project['name'] }}" target="_blank">
-                <i class="fa fa-window-restore fa-sm"></i>LAUNCH IN BROWSER</a>
-            </div>
-            {% endif %}
+            <span class="card-title grey-text text-darken-4">
+                {{project['name']}}
+                {% if "app" in project['tags'] %}
+                <a href="https://apps.cstern.io/{{ project['name'] }}" 
+                    target="_blank">
+                    <span class="change-icon">
+                    <i class="fas fa-external-link-square-alt"></i>
+                    <i class="fas fa-external-link-alt"></i>
+                    </span>
+                </a>
+                {% endif %}
+                <i class="material-icons right">close</i>
+            </span>
             
-            <div>
+            <!--<div>
                 <a href="https://github.com/cisaacstern/{{project['name']}}" target="_blank">
                     <img class="round-corners" alt="GitHub" 
                             src="{{badgebase}}{{project['name']}}{{badgetail}}">
                 </a>
-            </div>
+            </div>-->
             <p>{{project['short']}}</p>
-            <span><a href="/projects/{{project['link']}}">Read More</a></span>
+            <span><a href="/projects/{{project['name']}}">Read More</a></span>
         </div>
     </div>
 </div>
