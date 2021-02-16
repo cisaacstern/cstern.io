@@ -81,14 +81,13 @@ def project(title):
 
 @app.route('/goals')
 def goals():
-    data = get_static_json("static/giftgoals/giftgoals.json")['giftgoals']
-    data.sort(key=order_projects_by_weight, reverse=True)
+    
+    return render_template('goals.html')
 
-    tag = request.args.get('tags')
-    if tag is not None:
-        data = [project for project in data if tag.lower() in [project_tag.lower() for project_tag in project['tags']]]
+@app.route('/video')
+def video():
+    return render_template('video.html')
 
-    return render_template('giftgoals.html', giftgoals=data, tag=tag)
 
 def get_static_file(path):
     site_root = os.path.realpath(os.path.dirname(__file__))

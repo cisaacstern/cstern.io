@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/project.css') }}">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/chip.css') }}">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/hilite.css') }}">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/video.css') }}">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<video width="80%" controls>
+    <source src="./static/video/who_we_are.mp4" type="video/mp4">
+</video>
+{% endblock %}

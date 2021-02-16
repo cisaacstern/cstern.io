@@ -107,7 +107,7 @@
         "status": "complete",
         "weight": 1,
         "tags": [
-          "templates"
+          "template"
         ],
         "photos": [
           "/static/projects/cv2pdf/img.png"

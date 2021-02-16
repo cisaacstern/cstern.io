@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/project.css') }}">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/chip.css') }}">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/goals.css') }}">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <div id="objectives">
+        <h1>Objectives</h1>
+
+        <p> Some info </p>
+    </div>
+
+
+    <div id="commitments">
+    <h1>Commitments</h1>
+        
+    <p>
+        I am a new entrant to the field of geoscience computing. My previous work, which I
+        departed last year, was in medical devices. For the past 6 months, I have been learning
+        scientific programming with an emphasis on geoscientific applications, and am now
+        beginning the process of searching for a job in this field. As a cis-gendered white male, I
+        am aware---and have become increasingly so, through the URGE curriculum---of the
+        extent to which this field has historically been, and remains, a place which is accepting
+        of people like me, and that not all people feel the comfort I do in these spaces. Even
+        more so, I am coming to understand the ways in which the overt racism of this and
+        many other spaces in contemporary American culture is actively hostile to BIPOC
+        participation. Through URGE, I commit to crafting a set of D.E.I. Commitments to
+        guide my future career, which I will both share in a public manner (on a personal
+        website, for example) and with future employers and colleagues, and use to guide
+        decision making and actions to center equity and inclusion in my future workplace(s).
+    </p>
+
+    </div>
+</div>
+{% endblock %}
