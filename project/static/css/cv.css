@@ -1,0 +1,112 @@
+.cntct { 
+    grid-area: c; 
+    width: 250px;
+}
+.softs { 
+    grid-area: s; 
+    width: 250px;
+}
+.hards { 
+    grid-area: h; 
+    width: 250px;
+}
+.lngug { 
+    grid-area: l; 
+    width: 250px;
+}
+.headr { grid-area: t; }
+.exprs { 
+    grid-area: x; 
+    width: 480px;
+}
+.educa { 
+    grid-area: e; 
+    height: 200px;
+}
+.award { grid-area: a; }
+.volun { grid-area: v; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    't t t t'
+    'c x x x'
+    's x x x'
+    'h e e e'
+    'h v v v'
+    'h v v v'
+    'l a a a';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  height: calc(1100px * 0.915);
+  width: calc(850px * 0.915);
+  margin: auto;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 10px;
+}
+
+body, li {
+    font-family: 'Nunito';
+}
+
+h1, h4 {
+    font-family: 'Hack';
+    margin: 0px;
+}
+h1 {
+    display: inline;
+    margin-right: 8px;
+}
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+}
+.no-bullets .fas,
+.no-bullets .fab {
+    color: #595959;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+img {
+    width: 200px;
+    border-radius: 10px;
+}
+hr.solid {
+    border-top: 1px solid #292929;
+}
+tr .far, tr .fas {
+    color: #292929;
+}
+strong {
+    font-weight: 900;
+}
+.ss-line {
+    margin-top: 20px;
+}
+.date {
+    font-size: 12px;
+    font-weight: 900;
+    width: 65px;
+}
+tr {
+    vertical-align: top;
+}
+.date-short {
+    font-size: 12px;
+    font-weight: 900;
+    width: 40px;
+}
+.soft-desc {
+    font-size: 13px;
+    padding-left: 10px;
+}
+.blurb {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}

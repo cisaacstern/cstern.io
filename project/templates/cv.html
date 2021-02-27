@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito">
+
+<link rel= "stylesheet" href= "{{ url_for('static',filename='css/cv.css') }}">
+
+</head>
+<body>
+
+<div class="grid-container">
+    {% for i in items %}
+    <div class="{{ i['class'] }}">
+
+        <!-- HEADER -->
+
+        {% if i['class'] == 'headr' %}
+        <h1>{{ i['title'] }}</h1>
+        {% for c in i['icons'] %}
+        &emsp;<i class="{{ c['icon'] }}"></i> {{ c['text'] }}
+        {% endfor %}
+        <br>
+        <p class="blurb"> {{ i['blurb'] }} </p>
+        {% endif %}
+
+        <!-- CONTACT -->
+
+        {% if i['class'] == 'cntct' %}
+        <h4><i class="{{ i['icon'] }}"></i>
+            {{ i['title'] }}
+            <hr class="solid">
+        </h4>
+            {% for c in i['content'] %}
+            <li class="no-bullets"><i class="{{ c['icon'] }}"></i>
+                &thinsp;{{ c['text'] }}
+            </li>
+            {% endfor %}
+        {% endif %}
+
+        <!-- SOFT SKILLS -->
+
+        {% if (i['class'] == 'softs') %}
+        <h4><i class="{{ i['icon'] }}"></i>
+            {{ i['title'] }}
+            <hr class="solid">
+        </h4>
+        {% for c in i['content'] %}
+            <strong class="ss-line">{{ c['name'] }}</strong>
+            <span class="soft-desc">{{ c['desc']|safe }}</span>
+            <br>
+            {% endfor %}
+        {% endif %}
+
+        <!-- HARD SKILLS -->
+
+        {% if (i['class'] == 'hards') %}
+        <h4><i class="{{ i['icon'] }}"></i>
+            {{ i['title'] }}
+            <hr class="solid">
+        </h4>
+        <table>
+            <tbody>
+                {% for c in i['content'] %}
+                <tr>
+                    <td>{{ c['name'] }}</td>
+                    <td>&emsp;</td>
+                    <td>
+                        {% for j in range(c['level']) %}
+                        <i class="{{ i['fill_circle'] }}"></i>
+                        {% endfor %}
+                        {% for j in range(5 - c['level']) %}
+                        <i class="{{ i['open_circle'] }}"></i>
+                        {% endfor %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        <!-- LANGUAGES -->
+
+        {% if (i['class'] == 'lngug') %}
+        <h4><i class="{{ i['icon'] }}"></i>
+            {{ i['title'] }}
+            <hr class="solid">
+        </h4>
+        <table>
+            <tbody>
+                {% for c in i['content'] %}
+                <tr>
+                    <td>{{ c['name'] }}</td>
+                    <td>&emsp;</td>
+                    <td>
+                        {{ c['level'] }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        <!-- EXPERIENCE -->
+
+        {% if (i['class'] == 'exprs') %}
+        <h4><i class="{{ i['icon'] }}"></i>
+            {{ i['title'] }}
+            <hr class="solid">
+        </h4>
+
+        {% for c in i['content'] %}
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan=3 class="date">
+                        {{ c['date'][:10] }}
+                        <br>
+                        {{ c['date'][10:] }}
+                    </td>
+
+                    <td>{{c['title']}}</td>
+                </tr>
+                <tr>
+                    <td><i>{{c['company']}}</i></td>
+                </tr>
+                <tr>
+                    <td>{{ c['desc']|safe }}</td>
+                </tr>
+            </tbody>
+        </table>
+        {% endfor %}
+
+        {% endif %}
+
+        <!-- EDUCATION -->
+
+        {% if (i['class'] == 'educa') %}
+        <h4><i class="{{ i['icon'] }}"></i>
+            {{ i['title'] }}
+            <hr class="solid">
+        </h4>
+
+        {% for c in i['content'] %}
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan=3 class="date">
+                        {{ c['date'][:10] }}
+                        <br>
+                        {{ c['date'][10:] }}
+                    </td>
+
+                    <td>{{c['course']}}</td>
+                </tr>
+                <tr>
+                    <td><i>{{c['school']}}</i></td>
+                </tr>
+                <tr>
+                    <td>{{c['desc']}}</td>
+                </tr>
+            </tbody>
+        </table>
+        {% endfor %}
+
+        {% endif %}
+
+        <!-- AWARD -->
+
+        {% if (i['class'] == 'award') %}
+        <h4><i class="{{ i['icon'] }}"></i>
+            {{ i['title'] }}
+            <hr class="solid">
+        </h4>
+
+        {% for c in i['content'] %}
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan=3 class="date-short">
+                        {{ c['date'][:10] }}
+                        <br>
+                        {{ c['date'][10:] }}
+                    </td>
+
+                    <td>{{c['name']}}</td>
+                </tr>
+            </tbody>
+        </table>
+        {% endfor %}
+
+        {% endif %}
+
+        <!-- VOLUNTEER -->
+
+        {% if (i['class'] == 'volun') %}
+        <h4><i class="{{ i['icon'] }}"></i>
+            {{ i['title'] }}
+            <hr class="solid">
+        </h4>
+
+        {% for c in i['content'] %}
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan=3 class="date">
+                        {{ c['date'][:10] }}
+                        <br>
+                        {{ c['date'][10:] }}
+                    </td>
+
+                    <td>{{c['name']}}</td>
+                </tr>
+            </tbody>
+        </table>
+        {% endfor %}
+
+        {% endif %}
+
+    </div>
+    {% endfor %}
+</div>
+
+
+</body>
+</html>

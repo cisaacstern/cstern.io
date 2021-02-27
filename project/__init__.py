@@ -88,6 +88,12 @@ def goals():
 def video():
     return render_template('video.html')
 
+@app.route('/cv')
+def cv():
+    data = get_static_json("static/cv/cv.json")
+    items = data['items']
+
+    return render_template('cv.html', items=items)
 
 def get_static_file(path):
     site_root = os.path.realpath(os.path.dirname(__file__))

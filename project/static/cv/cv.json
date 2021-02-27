@@ -1,0 +1,212 @@
+{
+    "items":[
+        {
+            "title": "Contact",
+            "class": "cntct",
+            "icon": "fas fa-info-circle",
+            "content":[
+                {
+                    "text": "+1-914-450-5653",
+                    "icon": "fas fa-phone-alt fa-md"
+                },
+                {
+                    "text": "charlesisaacstern@gmail.com",
+                    "icon": "fas fa-paper-plane"
+                },
+                {
+                    "text": "@charlesstern",
+                    "icon": "fab fa-twitter"
+                },
+                {
+                    "text": "@cisaacstern",
+                    "icon": "fab fa-github"
+                },
+                {
+                    "text": "@charles-stern-ab965b29",
+                    "icon": "fab fa-linkedin-in"
+                }
+            ]
+        },
+        {
+            "title": "Soft Skills",
+            "class": "softs",
+            "icon": "fas fa-puzzle-piece",
+            "content": [
+                {
+                    "name": "Communication",
+                    "desc": "Is my secret weapon."
+                },
+                {
+                    "name": "Self-Direction",
+                    "desc": "Is where I thrive."
+                },
+                {
+                    "name": "Autodicacticism",
+                    "desc": "I can learn anything."
+                },
+                {
+                    "name": "Follow-Through",
+                    "desc": "I'm relentless."
+                },
+                {
+                    "name": "Systems Thinking",
+                    "desc": "I <i class='far fa-heart'></i> a big picture."
+                }
+            ]
+
+        },
+        {
+            "title": "Hard Skills",
+            "class": "hards",
+            "icon": "fas fa-laptop-code",
+            "fill_circle": "fas fa-circle",
+            "open_circle": "far fa-circle",
+            "content":[
+                {
+                    "name": "Python",
+                    "level": 4
+                },
+                {
+                    "name": "Conda (env)",
+                    "level": 3
+                },
+                {
+                    "name": "GitHub / Git",
+                    "level": 3
+                },
+                {
+                    "name": "Unix",
+                    "level": 3
+                },
+                {
+                    "name": "HTML/CSS/Jinja",
+                    "level": 2
+                },
+                {
+                    "name": "Docker",
+                    "level": 2
+                },
+                {
+                    "name": "JavaScript",
+                    "level": 1
+                }
+            ]
+
+        },
+        {
+            "title": "Languages",
+            "class": "lngug",
+            "icon": "fas fa-flag",
+            "content":[
+                {
+                    "name": "English",
+                    "level": "Native"
+                },
+                {
+                    "name": "Mandarin",
+                    "level": "Near-Native (Verbal & Written)"
+                }
+            ]
+        },
+        {
+            "title": "Charles Stern",
+            "class": "headr",
+            "icons": [
+                {
+                    "icon": "fas fa-link",
+                    "text": "cstern.io"
+                },
+                {
+                    "icon": "fas fa-user-circle",
+                    "text": "he him his"
+                },
+                {
+                    "icon": "fas fa-map-marked",
+                    "text": "Los Angeles, CA, USA"
+                }
+            ],
+            "blurb": "I designed a medical device, then went in search of a technical career that I cared more about (mountains!) and where I could iterate faster and more flexibly (code!). Been studying/practicing the last ~6 months."
+        },
+        {
+            "title": "Experiences",
+            "class": "exprs",
+            "icon": "fas fa-briefcase",
+            "content":[
+                {
+                    "date": "2020-09 - Present",
+                    "title": "Self Directed Study",
+                    "company": "",
+                    "desc": "This was good learning."
+                },
+                {
+                    "date": "2015-01 - 2020-08",
+                    "title": "Cofounder, Chief Product Officer",
+                    "company": "Parker Isaac Instruments, Ithaca, NY, USA",
+                    "desc": "Designed and patented novel medical device ( <code>US Pat. No. 10,775,280 B2</code> )."
+                },
+                {
+                    "date": "2016-03 - 2018-06",
+                    "title": "Propagation Horticulturist",
+                    "company": "Broken Arrow Nursery, Hamden, CT, USA",
+                    "desc": "This was good."
+                }
+            ]
+        },
+        {
+            "title": "Education",
+            "class": "educa",
+            "icon": "fas fa-graduation-cap",
+            "content":[
+                {
+                    "date": "2020-07 - 2020-10",
+                    "course": "Calculus 1 (Math 220)",
+                    "school": "University of Illinois, Urbana-Champ."
+                },
+                {
+                    "date": "2019-11 - 2020-02",
+                    "course": "Intro to Statistics for Life and Health Sciences (XL13)",
+                    "school": "University of California, Los Angeles"
+                },
+                {
+                    "date": "2005-09 - 2009-05",
+                    "course": "BA cum laude, Religion & East Asian Studies",
+                    "school": "Bowdoin College, Brunswick, ME, USA"
+                }
+            ]
+        },
+        {
+            "title": "Fellowships",
+            "class": "award",
+            "icon": "fas fa-award",
+            "content":[
+                {
+                    "date": "2019",
+                    "name": "Class 5 Participant, Cedars-Sinai Accelerator, LA, CA, USA",
+                    "desc": "Los Angeles, CA, USA"
+                },
+                {
+                    "date": "2009",
+                    "name": "Fulbright Research Fellow, US Dept. of State, Sichuan, PRC",
+                    "desc": "Chengdu, Sichuan, PRC"
+                }
+            ]
+        },
+        {
+            "title": "Volunteering",
+            "class": "volun",
+            "icon": "fas fa-hands-helping",
+            "content":[
+                {
+                    "date": "2020-02 - Present", 
+                    "name": "NumPy Documentation Team"
+                },
+                {
+                    "date": "2020-01 - Present", 
+                    "name": "Unlearning Racism in Geoscience (URGE)"
+                }
+
+            ]
+        }
+        
+    ]
+}
