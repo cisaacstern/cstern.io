@@ -2,7 +2,7 @@
     <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
             {% if 'photos' in project %}
-            <img class="card-image activator" src={{project['photos'][0]}}/>
+            <img class="card-image activator" src="/static/projects/{{ project['name'] }}/img.png">
             {% else %}
             <img class="card-image activator" src="/static/images/projectx.png/">
             {% endif %}

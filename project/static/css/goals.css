@@ -1,8 +1,27 @@
-.content {
-    margin-left: 10% !important;
-    margin-right: 10% !important;
+body {
+    margin-left: 3% !important;
+}
+body > #content {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
 }
 p {
     color: white;
     font-family: 'Nunito', sans-serif;
+    font-size: medium;
+    margin: 3% !important;
+}
+#objectives > h1,
+#commitments > h1 {
+    color: #eee;
+    font-family: 'Hack', monospace;
+}
+
+blockquote {
+    font-family: 'Hack', monospace;
+    color: rgb(127, 255, 212, 0.7);
+    border-left: solid rgb(127, 255, 212, 0.2) !important;
+    padding: 10px;
+    background-color: rgb(127, 255, 212, 0.05);
+    margin-left: 5% !important;
 }

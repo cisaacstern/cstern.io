@@ -7,8 +7,7 @@
     "projects": [
       {
         "name": "get-dem",
-        "short": "Select a point on the US map, and this module retrieves USGS 1 arc-second DEMs. Then interactivately subset them.",
-        "status": "complete",
+        "short": "For any point selected on the US map, retrieves corresponding 1 arc-second DEMs from USGS via HTTP request.",
         "weight": 1,
         "tags": [
           "app"
@@ -19,8 +18,7 @@
       },
       {
         "name": "lidar-nn",
-        "short": "Won't you be, my neighbor?",
-        "status": "complete",
+        "short": "Won't you be, my neighbor? Based on user-defined parameters, regularizes pointcloud data via nearest neighbor interpolation.",
         "weight": 1,
         "tags": [
           "app"
@@ -31,8 +29,7 @@
       },
       {
         "name": "when-rad",
-        "short": "Light or dark.",
-        "status": "complete",
+        "short": "Calculates if/when each point on a DEM is exposed to direct solar radiation. Example of Numba-accelerated functional Python.",
         "weight": 1,
         "tags": [
           "app"
@@ -43,11 +40,10 @@
       },
       {
         "name": "nginx-wrapper",
-        "short": "Proxy or bust.",
-        "status": "complete",
+        "short": "It's the site you're on right now! Flask app served with Gunicorn and containerized behind an Nginx reverse proxy with SSL.",
         "weight": 1,
         "tags": [
-          "template"
+          "site"
         ],
         "photos": [
           "/static/projects/nginx-wrapper/img.png"
@@ -55,8 +51,7 @@
       },
       {
         "name": "ufunc-correct",
-        "short": "Proxy or bust.",
-        "status": "complete",
+        "short": "NumPy's universal functions (ufuncs) make array operations fast. This app uses ufuncs to calculate solar irradiation intensity based on sun position and slope/aspect of a DEM.",
         "weight": 1,
         "tags": [
           "app"
@@ -66,12 +61,11 @@
         ]
       },
       {
-        "name": "cstern.io",
-        "short": "Proxy or bust.",
-        "status": "complete",
+        "name": "apps.cstern.io",
+        "short": "Serves multiple Panel apps from a containerized BokehTornado service. The fiddliest part was getting bidirectional websocket communication through the SSL-secured Nginx proxy. ",
         "weight": 1,
         "tags": [
-          "static"
+          "site"
         ],
         "photos": [
           "/static/projects/cstern.io/img.png"
@@ -79,8 +73,7 @@
       },
       {
         "name": "albedo",
-        "short": "Proxy or bust.",
-        "status": "complete",
+        "short": "The project that kickstarted my scientific Python journey in earnest. Here's an overview of what I've accomplished thus far in computational methods for snow radiative transfer modeling.",
         "weight": 1,
         "tags": [
           "analysis"
@@ -90,24 +83,22 @@
         ]
       },
       {
-        "name": "cv2pdf",
-        "short": "Proxy or bust.",
-        "status": "complete",
+        "name": "jinja-resume",
+        "short": "Over-automation can be a fools errand, if it takes longer than doing the task manually and/or doesn't pay dividends. But I think using Jinja to layout my resume actually paid off.",
         "weight": 1,
         "tags": [
-          "script"
+          "feature"
         ],
         "photos": [
           "/static/projects/cv2pdf/img.png"
         ]
       },
       {
-        "name": "panel-tmpl",
-        "short": "Proxy or bust.",
-        "status": "complete",
+        "name": "math+hilite",
+        "short": "To make my project descriptions more informative, I wanted to be able to render mathematical notation and syntax-highlighted code on this side. Here's a summary of how I achieved that.",
         "weight": 1,
         "tags": [
-          "template"
+          "feature"
         ],
         "photos": [
           "/static/projects/cv2pdf/img.png"
