@@ -84,7 +84,7 @@
       },
       {
         "name": "jinja-resume",
-        "short": "Over-automation can be a fools errand, if it takes longer than doing the task manually and/or doesn't pay dividends. But I think using Jinja to layout my resume actually paid off.",
+        "short": "Over-automation can be a fool's errand, if it takes longer than doing the task manually and/or doesn't pay dividends. But I think using Jinja to layout my resume actually paid off.",
         "weight": 1,
         "tags": [
           "feature"

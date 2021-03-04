@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+.heading {
+  margin-left: 5%;
+}
+
 .navbar-ul {
   width: 80vh;
   overflow-x: hidden;
@@ -27,18 +31,13 @@ h1, h2 {
 }
 
 pre {
-  background-color: #202020;
   border: none;
-  filter: drop-shadow(0 0 0.55rem #121212);
+  width: 80%;
+  margin: 0 !important;
 }
 
 blockquote pre {
   filter: drop-shadow(0 0 0.25rem black);
-}
-
-.codehilite {
-  background: none;
-  overflow: auto;
 }
 
 code {
@@ -54,57 +53,38 @@ pre code {
   overflow-x: auto;
 }
 
-.container {
-  height: 100%;
-  max-width: 90vw; 
-  margin: 0 0 20px 20px;
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: top;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #292929;
+
+.content {
+  display: inline;
   color: white;
 }
 
-.content {
-  margin-left: 20px;
-  display: inline;
-  margin-top: 50px;
+p {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.wrapper{
-  width: 90%;
-  /* margin: 0 !important; */
+.not-nav > li {
+  margin-left: 5%;
+  list-style-type: none; /* Remove bullets */
 }
 
-.scroll-wrapper::-webkit-scrollbar {
-    display: none;
-    margin-right: 5%;
+p > a {
+  color: #039BE5;
+  text-decoration: none;
 }
-
-.scroll-wrapper {
-  height: 100%;
-  display: inline-block;
-  flex-direction: column;
-  max-width: 60%;
-}
-
-.fixed-wrapper {
-    /* position: fixed; 
-    right: 5vh;*/
-    top: 80%;
-    display: block;
-    justify-content:left;
-    width: 30vw;
-    margin-right: 5px !important;
-    margin-bottom: 10vh !important;
+p > a:hover {
+  opacity: 85%;
+  text-decoration: none;
 }
 
 .title {
-  font-size: 50px;
+  font-size: 30px;
   margin-top:10px;
   font-family: 'Hack', monospace;
-  word-break: break-word;
+  word-break:keep-all;
+  white-space: nowrap;
+  color: white;
 }
 
 .links{
@@ -141,34 +121,4 @@ span {
     width: 100%;
   }
 
-  .fixed-wrapper {
-    /* position: static; */
-    margin-left: 0vh;
-  }
-
-  .scroll-wrapper {
-    min-height: 0px;
-    max-width: 90%;
-  }
-
-  .container {
-    flex-direction: column;
-    max-width: 100%;
-  }
-  .wrapper {
-    width: 90%;
-    padding: 1em;
-  }
-  .mobile-view {
-    display: block;
-  }
-  .desktop-view {
-    display: none;
-  }
-  .wrapper.fixed-wrapper {
-    min-height: 0;
-    display: inline-block;
-    justify-content: left;
-    align-items: left;
-  }
 }

@@ -1,0 +1,5 @@
+This app began as a few functions in a Jupyter notebook. One of the most remarkable aspects of <a href="https://panel.holoviz.org/" target="_blank">Panel</a> is how quickly a few Python functions can become a webapp. The aim of hosting this app online is to build transparency and reproducibility into the data transformation infrastructure for the <a href="https://cstern.io/projects/albedo">albedo analysis project</a>.
+
+The core computations of the albedo analysis are implemented in the <a href="https://cstern.io/projects/ufunc-correct">ufunc-correct</a> and <a href="https://cstern.io/projects/when-rad">when-rad</a> apps. Those modules require a regularized grid as input, however; producing that grid is the function performed by this module.
+
+In future iterations of this app, I'm interested in exploring ways to constrain parameterization with some model-based assumptions for how the returned grid should "look" mathematically. It makes me somewhat uneasy that parameterization of this very important step is currently unconstrained, but hey, one step at a time!

@@ -1,86 +1,76 @@
 {% extends "base.html" %}
 
 {% block head %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/project.css') }}">
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/chip.css') }}">
 <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/hilite.css') }}">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 {% endblock %}
 
 {% block body %}
-<div class="container">
-    <div class="wrapper fixed-wrapper">
-        {% if 'photos' in project %}
-        <div>
-            {% for photo in project['photos'] %}
-            <img class="cropped round-corners" src="{{ photo }}" alt="project_photo">
-            {% endfor %}
 
-            <div class="heading">
-                <div class="title">
-                {{ project['name'] }}
-                
-                {% if "app" in project['tags'] %}
-                <a href="https://apps.cstern.io/{{ project['name'] }}" 
-                    target="_blank">
-                    <span class="change-icon">
-                    <i class="fas fa-external-link-square-alt"></i>
-                    <i class="fas fa-external-link-alt"></i>
-                    </span>
-                </a>
-                {% endif %}
-                </div>
+<div class="w3-row">
+    <div class="w3-col w3-container s12 m12 l12">
+        <div class="heading">
 
-                <a href="https://github.com/cisaacstern/{{ project['name'] }}" target="_blank">
-                    <img class="round-corners" alt="GitHub" src="{{ last_commit }}"></a>
+            <img class="cropped round-corners" 
+                src="/static/projects/{{ project['name'] }}/img.png" 
+                alt="project_photo">
 
-                <div class="md-chips">
-                    {% for tag in project['tags'] %}
-                    <div class="md-chip md-chip-clickable"><a class="md-chip-link" href="/projects?tags={{tag}}">{{tag}}</a>
-                    </div>
-                    {% endfor %}
-                </div>
-                
-                <div class="links">
-                    {% if 'github' in project %}
-                    <div><a class="github" href={{project['github']}}>Find on Github</a></div>
-                    {% elif 'arxiv' in project %}
-                    <div><a class="github" href={{project['arxiv']}}>View on Arxiv</a></div>
-                    {% elif 'playstore' in project %}
-                    <div><a class="github" href={{project['playstore']}}>View on Google Play</a></div>
-                    {% endif %}
-                </div>
+            <div class="title">
+            {{ project['name'] }}
+            
+            {% if "app" in project['tags'] %}
+            <a href="https://apps.cstern.io/{{ project['name'] }}" 
+                target="_blank">
+                <span class="change-icon">
+                <i class="fas fa-external-link-square-alt"></i>
+                <i class="fas fa-external-link-alt"></i>
+                </span>
+            </a>
+            {% endif %}
             </div>
 
+            {% if "feature" not in project['tags'] 
+                and "analysis" not in project['tags']%}
+            <a href="https://github.com/cisaacstern/{{ project['name'] }}" target="_blank">
+                <img class="round-corners" alt="GitHub" src="{{ last_commit }}"></a>
+            {% endif %}
+
+            <div class="md-chips">
+                {% for tag in project['tags'] %}
+                <div class="md-chip md-chip-clickable"><a class="md-chip-link" href="/projects?tags={{tag}}">{{tag}}</a>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-        {% endif %}
+    </div>
+    <div class="w3-col w3-container s12 m12 l10">
+        <div class="content">
+        {{ project['description'] | safe }}
+        </div>
     </div>
 
-    <div class="wrapper scroll-wrapper">
-        <div class="content">{{ project['description'] | safe }}</div>
-    </div>
 
-</div>
-
-<script type="text/javascript">
-    window.MathJax = {
-  tex: {
-    inlineMath: [ ["\\(","\\)"] ],
-    displayMath: [ ["\\[","\\]"] ],
-    processEscapes: true,
-    processEnvironments: true
-  },
-  options: {
-    ignoreHtmlClass: ".*|",
-    processHtmlClass: "arithmatex"
-  }
-};
-</script>
-{% endblock %}
+    <script type="text/javascript">
+        window.MathJax = {
+      tex: {
+        inlineMath: [ ["\\(","\\)"] ],
+        displayMath: [ ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        ignoreHtmlClass: ".*|",
+        processHtmlClass: "arithmatex"
+      }
+    };
+    </script>
+    {% endblock %}

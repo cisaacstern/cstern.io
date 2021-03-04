@@ -44,23 +44,6 @@ def project(title):
         cwd = "static/projects"
         projdir = (cwd, selected['name'])
 
-        # md_template = open_static('%s/template.md' % cwd)
-
-        # context = {
-        #     'motive_lede' : open_static('%s/%s/motive_lede.md' % projdir),
-        #    'bigtheme' : open_static('%s/%s/bigtheme.md' % projdir),
-        #    'motive_full' : open_static('%s/%s/motive_full.md' % projdir),
-        #    'ww_lede' : open_static('%s/%s/ww_lede.md' % projdir),
-        #    'ww_code' : open_static('%s/%s/ww_code.py' % projdir),
-        #    'ww_full' : open_static('%s/%s/ww_full.md' % projdir),
-        #    'rtg_lede' : open_static('%s/%s/rtg_lede.md' % projdir),
-        #    'rtg_code' : open_static('%s/%s/rtg_code.py' % projdir),
-        #    'rtg_full' : open_static('%s/%s/rtg_full.md' % projdir),
-        #    'xtra_read' : open_static('%s/%s/xtra_read.md' % projdir),
-        #}
-        
-        # md = render_markdown_template(md_template, context)
-
         md = open_static('%s/%s/reflection.md' % projdir)
 
         selected['description'] = markdown.markdown(md, 
@@ -90,8 +73,8 @@ def goals():
 def video():
     return render_template('video.html')
 
-@app.route('/cv')
-def cv():
+@app.route('/resume')
+def resume():
     data = get_static_json("static/cv/cv.json")
     items = data['items']
 

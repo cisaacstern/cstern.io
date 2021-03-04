@@ -1,10 +1,10 @@
-pre { line-height: 125%; }
+pre { line-height: 20%; }
 td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
 span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
 td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .codehilite .hll { background-color: #404040 }
-.codehilite { background: #202020; color: #d0d0d0 }
+.codehilite { background: #202020; color: #d0d0d0; width: 80%; overflow-x: scroll; margin-left: 5%; padding: 1em; }
 .codehilite .c { color: #999999; font-style: italic } /* Comment */
 .codehilite .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .codehilite .esc { color: #d0d0d0 } /* Escape */
@@ -49,7 +49,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .codehilite .ne { color: #bbbbbb } /* Name.Exception */
 .codehilite .nf { color: #447fcf } /* Name.Function */
 .codehilite .nl { color: #d0d0d0 } /* Name.Label */
-.codehilite .nn { color: #447fcf; text-decoration: underline } /* Name.Namespace */
+.codehilite .nn { color: #447fcf; text-decoration: none } /* Name.Namespace */
 .codehilite .nx { color: #d0d0d0 } /* Name.Other */
 .codehilite .py { color: #d0d0d0 } /* Name.Property */
 .codehilite .nt { color: #6ab825; font-weight: bold } /* Name.Tag */

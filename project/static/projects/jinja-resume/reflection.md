@@ -1,0 +1,5 @@
+Jinja is a powerful templating tool which I first used via <a href="https://panel.holoviz.org/user_guide/Templates.html" target="_blank">Panel Templates</a>. Since then, I've found it incredibly useful in a range of settings, including for auto-generating the cards at <a href="/projects">cstern.io/projects</a> from a JSON file.
+
+One of the more novel uses I've found for Jinja is creating my <a href="/resume">resume</a>. This seemed like a good candidate for automation in part because I've always found resume formatting to be a uniquely tedious process. Templating in HTML made it straightforward to use CSS for defining typefaces as well as include icons from the <a href="https://fontawesome.com">Font Awesome</a> library.
+
+At some point soon, I'm curious to explore using Jinja for generating Python functions based on user-defined parameters.

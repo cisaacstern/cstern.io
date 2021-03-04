@@ -1,0 +1,5 @@
+This app determines if and when each cell of an input DEM is exposed to direct solar radiation over the course of a specified date. I translated the algorithm underlying this module from the C code provided in Table 3 of <a href="http://www2.bren.ucsb.edu/~dozier/Pubs/DozierFrewIEEE1990.pdf" target="_blank">Dozier & Frew 1990</a>. The matrix rotation component of the method was adapted from <a href="http://www2.bren.ucsb.edu/~dozier/Pubs/DozierEtAlCompGeosci1981.pdf" target="_blank">Dozier et al 1981</a>.
+
+The most rewarding part of this project was leveraging Numba's just-in-time compiler to accelerate the computation. While my Python programming style tends to emphasize object-oriented structures, using Numba encouraged me to explore a functional approach. In the end, Numba compilation resulted in a roughly 100x (yes, one hundred times!) per-loop acceleration.
+
+While I would eventually like to explore writing compiled algorithms myself, it's quite remarkable how much faster looped operations over NumPy arrays become with Numba.
