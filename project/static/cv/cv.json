@@ -41,7 +41,7 @@
                     "desc": "Is where I thrive."
                 },
                 {
-                    "name": "Autodicacticism",
+                    "name": "Autodidacticism",
                     "desc": "I can learn anything."
                 },
                 {
@@ -61,21 +61,26 @@
             "icon": "fas fa-laptop-code",
             "fill_circle": "fas fa-circle",
             "open_circle": "far fa-circle",
+            "asterix": "Above scale is relative fluency. Exploring cstern.io/projects, GitHub, or talking to me are all certainly better measures!",
             "content":[
                 {
                     "name": "Python",
+                    "level": 5
+                },
+                {
+                    "name": "Jupyter",
                     "level": 4
                 },
                 {
+                    "name": "GitHub/Git CLI",
+                    "level": 3
+                },
+                {
+                    "name": "Unix shell",
+                    "level": 3
+                },
+                {
                     "name": "Conda (env)",
-                    "level": 3
-                },
-                {
-                    "name": "GitHub / Git",
-                    "level": 3
-                },
-                {
-                    "name": "Unix",
                     "level": 3
                 },
                 {
@@ -83,7 +88,7 @@
                     "level": 2
                 },
                 {
-                    "name": "Docker",
+                    "name": "Docker & Nginx",
                     "level": 2
                 },
                 {
@@ -104,7 +109,7 @@
                 },
                 {
                     "name": "Mandarin",
-                    "level": "Near-Native (Verbal & Written)"
+                    "level": "Near-Native"
                 }
             ]
         },
@@ -125,30 +130,31 @@
                     "text": "Los Angeles, CA, USA"
                 }
             ],
-            "blurb": "I designed a medical device, then went in search of a technical career that I cared more about (mountains!) and where I could iterate faster and more flexibly (code!). Been studying/practicing the last ~6 months."
+            "blurb": "An extrovert who also thrives on deep technical immersion, I'm excited to tackle engineering challenges while also serving in an outreach capacity. I enjoy collaboration and jumping into the deep end."
         },
         {
             "title": "Experiences",
             "class": "exprs",
             "icon": "fas fa-briefcase",
+            "asterix": "*More experiences on LinkedIn.",
             "content":[
                 {
                     "date": "2020-09 - Present",
-                    "title": "Self Directed Study",
+                    "title": "Self-Directed Study",
                     "company": "",
-                    "desc": "This was good learning."
+                    "desc": "Intensive focus on project-based learning in software engineering with an emphasis on the scientific Python stack, interactive visualization, and devops."
                 },
                 {
                     "date": "2015-01 - 2020-08",
                     "title": "Cofounder, Chief Product Officer",
                     "company": "Parker Isaac Instruments, Ithaca, NY, USA",
-                    "desc": "Designed and patented novel medical device ( <code>US Pat. No. 10,775,280 B2</code> )."
+                    "desc": "Designed, patented, funded, and launched novel medical device (<code>US Pat. No. 10,775,280 B2</code>) used by Cedars-Sinai Medical Center in the diagnosis of colorectal cancer since mid-2019."
                 },
                 {
                     "date": "2016-03 - 2018-06",
                     "title": "Propagation Horticulturist",
                     "company": "Broken Arrow Nursery, Hamden, CT, USA",
-                    "desc": "This was good."
+                    "desc": "Cultivated Magnolias, Maples, and Dogwoods (to name a few) at New England's premier supplier of woody landscape ornamentals."
                 }
             ]
         },
@@ -160,7 +166,7 @@
                 {
                     "date": "2020-07 - 2020-10",
                     "course": "Calculus 1 (Math 220)",
-                    "school": "University of Illinois, Urbana-Champ."
+                    "school": "University of Illinois, Urbana-Champaign"
                 },
                 {
                     "date": "2019-11 - 2020-02",
@@ -198,11 +204,11 @@
             "content":[
                 {
                     "date": "2020-02 - Present", 
-                    "name": "NumPy Documentation Team"
+                    "name": "Contributor-in-training, NumPy Documentation Team"
                 },
                 {
                     "date": "2020-01 - Present", 
-                    "name": "Unlearning Racism in Geoscience (URGE)"
+                    "name": "Pod Leader, Unlearning Racism in Geoscience (URGE)"
                 }
 
             ]

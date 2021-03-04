@@ -78,6 +78,7 @@
                 {% endfor %}
             </tbody>
         </table>
+        <div class="hard-asterix">{{ i["asterix"] }}</div>
         {% endif %}
 
         <!-- LANGUAGES -->
@@ -120,18 +121,20 @@
                         {{ c['date'][10:] }}
                     </td>
 
-                    <td>{{c['title']}}</td>
+                    <td class="expr-title">{{c['title']}}</td>
                 </tr>
                 <tr>
                     <td><i>{{c['company']}}</i></td>
                 </tr>
                 <tr>
-                    <td>{{ c['desc']|safe }}</td>
+                    <td class="expr-desc">{{ c['desc']|safe }}</td>
                 </tr>
+                <div class="hspacer"></div>
             </tbody>
         </table>
         {% endfor %}
 
+        <div class="asterix">{{ i['asterix'] }}</div>
         {% endif %}
 
         <!-- EDUCATION -->
@@ -209,13 +212,11 @@
                         <br>
                         {{ c['date'][10:] }}
                     </td>
-
                     <td>{{c['name']}}</td>
                 </tr>
             </tbody>
         </table>
         {% endfor %}
-
         {% endif %}
 
     </div>

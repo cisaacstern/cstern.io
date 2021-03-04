@@ -34,10 +34,8 @@
     's x x x'
     'h e e e'
     'h v v v'
-    'h v v v'
     'l a a a';
   grid-gap: 10px;
-  background-color: #2196F3;
   padding: 10px;
   height: calc(1100px * 0.915);
   width: calc(850px * 0.915);
@@ -92,6 +90,7 @@ strong {
     font-size: 12px;
     font-weight: 900;
     width: 65px;
+    padding-top: 3px;
 }
 tr {
     vertical-align: top;
@@ -109,4 +108,22 @@ tr {
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 0;
+}
+.expr-title {
+    font-weight: 900;
+}
+.hspacer {
+    height: 5px;
+}
+.expr-desc {
+    font-size: 13px;
+}
+.asterix {
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.hard-asterix {
+    font-size: 13px;
+    margin-top: 1em;
 }
